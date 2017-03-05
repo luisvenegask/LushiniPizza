@@ -12,6 +12,11 @@
 		D464A0F51E6B797500298527 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D464A0F31E6B797500298527 /* Main.storyboard */; };
 		D464A0F71E6B797500298527 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D464A0F61E6B797500298527 /* Assets.xcassets */; };
 		D464A0FA1E6B797500298527 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D464A0F81E6B797500298527 /* LaunchScreen.storyboard */; };
+		D464A1021E6C3FD000298527 /* VistaSizes.swift in Sources */ = {isa = PBXBuildFile; fileRef = D464A1011E6C3FD000298527 /* VistaSizes.swift */; };
+		D464A1041E6C4A7500298527 /* VistaMasa.swift in Sources */ = {isa = PBXBuildFile; fileRef = D464A1031E6C4A7500298527 /* VistaMasa.swift */; };
+		D464A1061E6C4A9A00298527 /* VistaQuesos.swift in Sources */ = {isa = PBXBuildFile; fileRef = D464A1051E6C4A9A00298527 /* VistaQuesos.swift */; };
+		D464A1081E6C4ACF00298527 /* VistaIngredientes.swift in Sources */ = {isa = PBXBuildFile; fileRef = D464A1071E6C4ACF00298527 /* VistaIngredientes.swift */; };
+		D464A10A1E6C4B0000298527 /* VistaConffirmacion.swift in Sources */ = {isa = PBXBuildFile; fileRef = D464A1091E6C4B0000298527 /* VistaConffirmacion.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +27,11 @@
 		D464A0F61E6B797500298527 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D464A0F91E6B797500298527 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D464A0FB1E6B797500298527 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D464A1011E6C3FD000298527 /* VistaSizes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VistaSizes.swift; sourceTree = "<group>"; };
+		D464A1031E6C4A7500298527 /* VistaMasa.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VistaMasa.swift; sourceTree = "<group>"; };
+		D464A1051E6C4A9A00298527 /* VistaQuesos.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VistaQuesos.swift; sourceTree = "<group>"; };
+		D464A1071E6C4ACF00298527 /* VistaIngredientes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VistaIngredientes.swift; sourceTree = "<group>"; };
+		D464A1091E6C4B0000298527 /* VistaConffirmacion.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VistaConffirmacion.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +70,11 @@
 				D464A0F61E6B797500298527 /* Assets.xcassets */,
 				D464A0F81E6B797500298527 /* LaunchScreen.storyboard */,
 				D464A0FB1E6B797500298527 /* Info.plist */,
+				D464A1011E6C3FD000298527 /* VistaSizes.swift */,
+				D464A1031E6C4A7500298527 /* VistaMasa.swift */,
+				D464A1051E6C4A9A00298527 /* VistaQuesos.swift */,
+				D464A1071E6C4ACF00298527 /* VistaIngredientes.swift */,
+				D464A1091E6C4B0000298527 /* VistaConffirmacion.swift */,
 			);
 			path = LushiniPizza;
 			sourceTree = "<group>";
@@ -136,8 +151,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D464A1021E6C3FD000298527 /* VistaSizes.swift in Sources */,
+				D464A1061E6C4A9A00298527 /* VistaQuesos.swift in Sources */,
+				D464A1081E6C4ACF00298527 /* VistaIngredientes.swift in Sources */,
+				D464A10A1E6C4B0000298527 /* VistaConffirmacion.swift in Sources */,
 				D464A0F21E6B797500298527 /* ViewController.swift in Sources */,
 				D464A0F01E6B797500298527 /* AppDelegate.swift in Sources */,
+				D464A1041E6C4A7500298527 /* VistaMasa.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

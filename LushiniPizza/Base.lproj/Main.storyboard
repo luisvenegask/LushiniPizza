@@ -1,14 +1,19 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11134" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="O7l-D3-spy">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11106"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="LushiniPizza" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -16,11 +21,438 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="BIENVENIDOS A LUSHINI PIZZA!!!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="akl-9N-iAj">
+                                <rect key="frame" x="16" y="80" width="343" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="NDA-LF-ZtD"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="General" translatesAutoresizingMaskIntoConstraints="NO" id="tRw-Pk-GoG">
+                                <rect key="frame" x="16" y="148" width="343" height="270"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="y5V-Zy-QSh">
+                                <rect key="frame" x="145" y="526" width="85" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="85" id="qQ5-YR-j1m"/>
+                                </constraints>
+                                <state key="normal" title="VAMOS!!!"/>
+                                <connections>
+                                    <segue destination="Xx5-D7-n1t" kind="show" id="k9k-J0-GXO"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Comienza tu pedido ahora" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="spS-tZ-kQ0">
+                                <rect key="frame" x="16" y="470" width="343" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="tRw-Pk-GoG" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="3fu-Cv-RDF"/>
+                            <constraint firstItem="akl-9N-iAj" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="4xS-4I-Mwe"/>
+                            <constraint firstItem="spS-tZ-kQ0" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="54x-Zj-wb3"/>
+                            <constraint firstItem="y5V-Zy-QSh" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ecf-FV-Sk3"/>
+                            <constraint firstItem="y5V-Zy-QSh" firstAttribute="top" secondItem="spS-tZ-kQ0" secondAttribute="bottom" constant="35" id="egh-V0-xaE"/>
+                            <constraint firstItem="spS-tZ-kQ0" firstAttribute="leading" secondItem="tRw-Pk-GoG" secondAttribute="leading" id="fk2-MY-tbp"/>
+                            <constraint firstItem="akl-9N-iAj" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="gcl-AN-fSN"/>
+                            <constraint firstItem="tRw-Pk-GoG" firstAttribute="leading" secondItem="akl-9N-iAj" secondAttribute="leading" id="i2J-SL-51F"/>
+                            <constraint firstItem="akl-9N-iAj" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="16" id="n4L-YU-t5e"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="tRw-Pk-GoG" secondAttribute="bottom" constant="249" id="oWp-Iu-JKL"/>
+                            <constraint firstItem="spS-tZ-kQ0" firstAttribute="top" secondItem="tRw-Pk-GoG" secondAttribute="bottom" constant="52" id="oqc-qp-p2i"/>
+                            <constraint firstItem="tRw-Pk-GoG" firstAttribute="top" secondItem="akl-9N-iAj" secondAttribute="bottom" constant="47" id="u5w-Jx-2vu"/>
+                        </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="jRx-YN-Ri2"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="2356" y="-561.76911544227892"/>
+        </scene>
+        <!--Vista Sizes-->
+        <scene sceneID="oQG-5p-QLD">
+            <objects>
+                <viewController id="Xx5-D7-n1t" customClass="VistaSizes" customModule="LushiniPizza" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="8Fw-EK-ctb"/>
+                        <viewControllerLayoutGuide type="bottom" id="enX-Aq-pYf"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="aRR-tN-nHz">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Elige el tamano de tu pizza" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="too-Kc-59F">
+                                <rect key="frame" x="16" y="72" width="343" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <pickerView hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YiP-i6-HA8">
+                                <rect key="frame" x="90" y="178" width="197" height="143"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="143" id="oVL-ID-tyD"/>
+                                </constraints>
+                                <connections>
+                                    <outlet property="dataSource" destination="Xx5-D7-n1t" id="MEH-Wu-VVq"/>
+                                    <outlet property="delegate" destination="Xx5-D7-n1t" id="9ng-Io-02e"/>
+                                </connections>
+                            </pickerView>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Bp4-Mt-Q3a">
+                                <rect key="frame" x="90" y="140" width="197" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <outlet property="delegate" destination="Xx5-D7-n1t" id="gcv-Yb-LTk"/>
+                                </connections>
+                            </textField>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Sizes" translatesAutoresizingMaskIntoConstraints="NO" id="7BH-jJ-PVV">
+                                <rect key="frame" x="69" y="329" width="239" height="216"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="216" id="rWa-n9-KBr"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ycQ-gn-URG">
+                                <rect key="frame" x="149" y="578" width="79" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="79" id="SEo-Mz-jub"/>
+                                </constraints>
+                                <state key="normal" title="SEGUIR"/>
+                                <connections>
+                                    <segue destination="Vbu-9n-K8S" kind="show" id="LOj-be-1cJ"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="7BH-jJ-PVV" firstAttribute="top" secondItem="YiP-i6-HA8" secondAttribute="bottom" constant="8" symbolic="YES" id="2Yw-3q-xD9"/>
+                            <constraint firstItem="YiP-i6-HA8" firstAttribute="top" secondItem="Bp4-Mt-Q3a" secondAttribute="bottom" constant="8" id="2ff-ld-foX"/>
+                            <constraint firstItem="ycQ-gn-URG" firstAttribute="top" secondItem="7BH-jJ-PVV" secondAttribute="bottom" constant="33" id="7dM-Lj-MKg"/>
+                            <constraint firstItem="too-Kc-59F" firstAttribute="centerX" secondItem="aRR-tN-nHz" secondAttribute="centerX" id="KRd-DE-uWe"/>
+                            <constraint firstItem="YiP-i6-HA8" firstAttribute="centerX" secondItem="aRR-tN-nHz" secondAttribute="centerX" constant="1" id="RQc-G2-f9T"/>
+                            <constraint firstItem="Bp4-Mt-Q3a" firstAttribute="leading" secondItem="YiP-i6-HA8" secondAttribute="leading" id="S8a-Ep-pSp"/>
+                            <constraint firstItem="7BH-jJ-PVV" firstAttribute="centerX" secondItem="aRR-tN-nHz" secondAttribute="centerX" constant="1" id="XMn-M8-efA"/>
+                            <constraint firstItem="too-Kc-59F" firstAttribute="leading" secondItem="aRR-tN-nHz" secondAttribute="leadingMargin" id="ZlE-dH-59d"/>
+                            <constraint firstItem="too-Kc-59F" firstAttribute="top" secondItem="8Fw-EK-ctb" secondAttribute="bottom" constant="8" symbolic="YES" id="a7R-ZB-WqR"/>
+                            <constraint firstItem="Bp4-Mt-Q3a" firstAttribute="leading" secondItem="aRR-tN-nHz" secondAttribute="leadingMargin" constant="74" id="aIl-Fr-XkU"/>
+                            <constraint firstItem="Bp4-Mt-Q3a" firstAttribute="top" secondItem="too-Kc-59F" secondAttribute="bottom" constant="47" id="bL3-Mf-NXN"/>
+                            <constraint firstItem="ycQ-gn-URG" firstAttribute="centerX" secondItem="aRR-tN-nHz" secondAttribute="centerX" constant="1" id="bVi-35-iES"/>
+                            <constraint firstItem="Bp4-Mt-Q3a" firstAttribute="centerX" secondItem="aRR-tN-nHz" secondAttribute="centerX" constant="1" id="hHO-3h-m3j"/>
+                            <constraint firstItem="7BH-jJ-PVV" firstAttribute="leading" secondItem="aRR-tN-nHz" secondAttribute="leadingMargin" constant="53" id="tqI-d5-2Vl"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="dropDownSize" destination="YiP-i6-HA8" id="ywc-YW-oeP"/>
+                        <outlet property="textoSize" destination="Bp4-Mt-Q3a" id="UTA-qY-NPR"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3Gt-V5-mdO" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3103.1999999999998" y="-562.66866566716647"/>
+        </scene>
+        <!--Vista Masa-->
+        <scene sceneID="XJk-oc-m1a">
+            <objects>
+                <viewController id="Vbu-9n-K8S" customClass="VistaMasa" customModule="LushiniPizza" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="ltI-ls-OdB"/>
+                        <viewControllerLayoutGuide type="bottom" id="7UQ-zR-uaV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="nCi-c9-IFp">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QD6-F1-zN0">
+                                <rect key="frame" x="155" y="580" width="65" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="65" id="ETm-rW-Aio"/>
+                                </constraints>
+                                <state key="normal" title="SEGUIR"/>
+                                <connections>
+                                    <segue destination="JVS-rl-lk1" kind="show" id="Ps5-dW-cDg"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Elige la masa de tu pizza" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uqg-qU-Dzb">
+                                <rect key="frame" x="21" y="64" width="310" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Masas" translatesAutoresizingMaskIntoConstraints="NO" id="0Z5-MO-yQP">
+                                <rect key="frame" x="41" y="336" width="292" height="205"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="205" id="5IM-DS-sQH"/>
+                                </constraints>
+                            </imageView>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Utf-QQ-fgx">
+                                <rect key="frame" x="91" y="138" width="194" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <outlet property="delegate" destination="Vbu-9n-K8S" id="S67-ei-tXr"/>
+                                </connections>
+                            </textField>
+                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pAh-4B-Hlj">
+                                <rect key="frame" x="91" y="176" width="200" height="140"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="140" id="826-Nm-fUF"/>
+                                </constraints>
+                                <connections>
+                                    <outlet property="dataSource" destination="Vbu-9n-K8S" id="J3B-Oo-8UH"/>
+                                    <outlet property="delegate" destination="Vbu-9n-K8S" id="Jpw-dY-d53"/>
+                                </connections>
+                            </pickerView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="uqg-qU-Dzb" firstAttribute="leading" secondItem="nCi-c9-IFp" secondAttribute="leadingMargin" constant="5" id="0yM-wL-Zf7"/>
+                            <constraint firstItem="pAh-4B-Hlj" firstAttribute="top" secondItem="Utf-QQ-fgx" secondAttribute="bottom" constant="8" symbolic="YES" id="8xF-Sv-CLE"/>
+                            <constraint firstItem="0Z5-MO-yQP" firstAttribute="centerX" secondItem="QD6-F1-zN0" secondAttribute="centerX" id="98o-1K-WF6"/>
+                            <constraint firstItem="Utf-QQ-fgx" firstAttribute="leading" secondItem="nCi-c9-IFp" secondAttribute="leadingMargin" constant="75" id="Pve-Bl-Zcg"/>
+                            <constraint firstItem="pAh-4B-Hlj" firstAttribute="leading" secondItem="Utf-QQ-fgx" secondAttribute="leading" id="Sex-Bu-b31"/>
+                            <constraint firstItem="QD6-F1-zN0" firstAttribute="centerX" secondItem="nCi-c9-IFp" secondAttribute="centerX" id="Tgm-b9-8UK"/>
+                            <constraint firstItem="QD6-F1-zN0" firstAttribute="centerX" secondItem="nCi-c9-IFp" secondAttribute="centerX" id="bh6-6B-XvH"/>
+                            <constraint firstItem="QD6-F1-zN0" firstAttribute="top" secondItem="0Z5-MO-yQP" secondAttribute="bottom" constant="39" id="eCT-s7-Fqg"/>
+                            <constraint firstItem="Utf-QQ-fgx" firstAttribute="centerX" secondItem="nCi-c9-IFp" secondAttribute="centerX" id="gVe-9x-QDx"/>
+                            <constraint firstItem="pAh-4B-Hlj" firstAttribute="centerX" secondItem="nCi-c9-IFp" secondAttribute="centerX" constant="3.5" id="hUQ-CU-EH4"/>
+                            <constraint firstItem="7UQ-zR-uaV" firstAttribute="top" secondItem="QD6-F1-zN0" secondAttribute="bottom" constant="57" id="kZ1-KV-7tR"/>
+                            <constraint firstItem="Utf-QQ-fgx" firstAttribute="top" secondItem="uqg-qU-Dzb" secondAttribute="bottom" constant="53" id="tse-hi-TUh"/>
+                            <constraint firstItem="uqg-qU-Dzb" firstAttribute="centerX" secondItem="nCi-c9-IFp" secondAttribute="centerX" constant="-11.5" id="ulw-KC-TEW"/>
+                            <constraint firstItem="0Z5-MO-yQP" firstAttribute="leading" secondItem="nCi-c9-IFp" secondAttribute="leadingMargin" constant="25" id="vzO-ZS-eN4"/>
+                            <constraint firstItem="uqg-qU-Dzb" firstAttribute="top" secondItem="ltI-ls-OdB" secondAttribute="bottom" id="yB6-pD-aG6"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="dropDownMasas" destination="pAh-4B-Hlj" id="nrV-Dz-a0S"/>
+                        <outlet property="textoMasas" destination="Utf-QQ-fgx" id="NhG-Ww-cIt"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="TGp-4N-W36" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3802.4000000000001" y="-561.76911544227892"/>
+        </scene>
+        <!--Vista Quesos-->
+        <scene sceneID="s8c-2Z-05Z">
+            <objects>
+                <viewController id="JVS-rl-lk1" customClass="VistaQuesos" customModule="LushiniPizza" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="sb3-hu-Eu1"/>
+                        <viewControllerLayoutGuide type="bottom" id="n1I-ey-c66"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="cTH-du-hKY">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7wS-0U-WnM">
+                                <rect key="frame" x="150" y="578" width="74" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="74" id="h2d-1p-l5Q"/>
+                                </constraints>
+                                <state key="normal" title="SEGUIR"/>
+                                <connections>
+                                    <segue destination="DdL-B7-DiR" kind="show" id="z7y-0E-F6Q"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Elige el queso de tu pizza" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="w2n-gK-foH">
+                                <rect key="frame" x="67" y="64" width="235" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Quesos" translatesAutoresizingMaskIntoConstraints="NO" id="sfU-2v-CHJ">
+                                <rect key="frame" x="29" y="348" width="311" height="194"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="194" id="1t9-Ua-vdU"/>
+                                </constraints>
+                            </imageView>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="To7-9s-qde">
+                                <rect key="frame" x="79" y="133" width="223" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <outlet property="delegate" destination="JVS-rl-lk1" id="TrL-fl-JLv"/>
+                                </connections>
+                            </textField>
+                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Oqy-w8-dik">
+                                <rect key="frame" x="91" y="171" width="191" height="169"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="169" id="jOr-EX-kNH"/>
+                                </constraints>
+                                <connections>
+                                    <outlet property="dataSource" destination="JVS-rl-lk1" id="ab8-E3-9rc"/>
+                                    <outlet property="delegate" destination="JVS-rl-lk1" id="hjD-JV-x6W"/>
+                                </connections>
+                            </pickerView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Oqy-w8-dik" firstAttribute="top" secondItem="To7-9s-qde" secondAttribute="bottom" constant="8" symbolic="YES" id="0Ew-MF-Gak"/>
+                            <constraint firstItem="sfU-2v-CHJ" firstAttribute="leading" secondItem="cTH-du-hKY" secondAttribute="leadingMargin" constant="13" id="60P-os-aqC"/>
+                            <constraint firstItem="w2n-gK-foH" firstAttribute="leading" secondItem="cTH-du-hKY" secondAttribute="leadingMargin" constant="51" id="A9i-f8-reQ"/>
+                            <constraint firstItem="To7-9s-qde" firstAttribute="centerX" secondItem="cTH-du-hKY" secondAttribute="centerX" constant="3" id="BD3-ZT-IsW"/>
+                            <constraint firstItem="To7-9s-qde" firstAttribute="trailing" secondItem="w2n-gK-foH" secondAttribute="trailing" id="EQ9-PV-T6h"/>
+                            <constraint firstItem="Oqy-w8-dik" firstAttribute="centerX" secondItem="cTH-du-hKY" secondAttribute="centerX" constant="-1" id="Ixk-CO-y9h"/>
+                            <constraint firstItem="n1I-ey-c66" firstAttribute="top" secondItem="7wS-0U-WnM" secondAttribute="bottom" constant="59" id="Jh0-4b-RSK"/>
+                            <constraint firstItem="7wS-0U-WnM" firstAttribute="centerX" secondItem="cTH-du-hKY" secondAttribute="centerX" id="Mdb-J3-D5U"/>
+                            <constraint firstItem="7wS-0U-WnM" firstAttribute="top" secondItem="sfU-2v-CHJ" secondAttribute="bottom" constant="36" id="Wii-L4-4gU"/>
+                            <constraint firstItem="Oqy-w8-dik" firstAttribute="leading" secondItem="cTH-du-hKY" secondAttribute="leadingMargin" constant="75" id="dpa-xL-QTJ"/>
+                            <constraint firstItem="To7-9s-qde" firstAttribute="top" secondItem="w2n-gK-foH" secondAttribute="bottom" constant="48" id="hx8-Gc-rAa"/>
+                            <constraint firstItem="w2n-gK-foH" firstAttribute="centerX" secondItem="cTH-du-hKY" secondAttribute="centerX" constant="-3" id="it6-Ak-Xj4"/>
+                            <constraint firstItem="sfU-2v-CHJ" firstAttribute="centerX" secondItem="w2n-gK-foH" secondAttribute="centerX" id="q6L-Jh-Bza"/>
+                            <constraint firstItem="w2n-gK-foH" firstAttribute="top" secondItem="sb3-hu-Eu1" secondAttribute="bottom" id="wTc-SS-Tgf"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="dropDownQuesos" destination="Oqy-w8-dik" id="sOR-XD-rx5"/>
+                        <outlet property="textoQuesos" destination="To7-9s-qde" id="ZaK-df-x6i"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8ll-c3-A8m" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4492" y="-561.76911544227892"/>
+        </scene>
+        <!--Vista Ingredientes-->
+        <scene sceneID="sy7-Nx-Zw5">
+            <objects>
+                <viewController id="DdL-B7-DiR" customClass="VistaIngredientes" customModule="LushiniPizza" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="NkW-1g-dyD"/>
+                        <viewControllerLayoutGuide type="bottom" id="x6A-7y-oYz"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="9xQ-gB-g3z">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dTy-8c-mxc">
+                                <rect key="frame" x="105" y="582" width="164" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="164" id="wZT-ot-d9J"/>
+                                </constraints>
+                                <state key="normal" title="Terminar Pedido"/>
+                                <connections>
+                                    <segue destination="oDc-y7-Fhc" kind="show" id="tfT-by-p47"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Elige tus ingredientes" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="y7w-7H-m0e">
+                                <rect key="frame" x="60" y="64" width="229" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Ingredientes" translatesAutoresizingMaskIntoConstraints="NO" id="qhL-Bi-7MW">
+                                <rect key="frame" x="23" y="341" width="329" height="196"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="196" id="8la-Qr-Mv2"/>
+                                </constraints>
+                            </imageView>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="knp-Nd-Yl3">
+                                <rect key="frame" x="87" y="135" width="193" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <outlet property="delegate" destination="DdL-B7-DiR" id="n03-pj-zrv"/>
+                                </connections>
+                            </textField>
+                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Fqs-Pt-H20">
+                                <rect key="frame" x="96" y="173" width="173" height="160"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="160" id="J2T-DX-dfV"/>
+                                </constraints>
+                                <connections>
+                                    <outlet property="dataSource" destination="DdL-B7-DiR" id="UnT-he-CFe"/>
+                                    <outlet property="delegate" destination="DdL-B7-DiR" id="ajG-vR-PWS"/>
+                                </connections>
+                            </pickerView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Fqs-Pt-H20" firstAttribute="trailing" secondItem="dTy-8c-mxc" secondAttribute="trailing" id="0jd-NF-wTJ"/>
+                            <constraint firstItem="Fqs-Pt-H20" firstAttribute="centerX" secondItem="9xQ-gB-g3z" secondAttribute="centerX" constant="-5" id="1c2-1R-uS8"/>
+                            <constraint firstItem="dTy-8c-mxc" firstAttribute="leading" secondItem="9xQ-gB-g3z" secondAttribute="leadingMargin" constant="89" id="7Q1-tA-XXN"/>
+                            <constraint firstItem="x6A-7y-oYz" firstAttribute="top" secondItem="dTy-8c-mxc" secondAttribute="bottom" constant="55" id="9b6-9F-glB"/>
+                            <constraint firstItem="y7w-7H-m0e" firstAttribute="leading" secondItem="9xQ-gB-g3z" secondAttribute="leadingMargin" constant="44" id="G0M-Z6-6w0"/>
+                            <constraint firstItem="qhL-Bi-7MW" firstAttribute="centerX" secondItem="dTy-8c-mxc" secondAttribute="centerX" id="H8B-FP-FKR"/>
+                            <constraint firstItem="dTy-8c-mxc" firstAttribute="top" secondItem="qhL-Bi-7MW" secondAttribute="bottom" constant="45" id="cFE-In-ndb"/>
+                            <constraint firstItem="knp-Nd-Yl3" firstAttribute="centerX" secondItem="9xQ-gB-g3z" secondAttribute="centerX" constant="-4" id="cYb-1w-FfF"/>
+                            <constraint firstItem="Fqs-Pt-H20" firstAttribute="top" secondItem="knp-Nd-Yl3" secondAttribute="bottom" constant="8" symbolic="YES" id="d6t-AE-Qae"/>
+                            <constraint firstItem="y7w-7H-m0e" firstAttribute="top" secondItem="NkW-1g-dyD" secondAttribute="bottom" id="eVW-ia-bvW"/>
+                            <constraint firstItem="qhL-Bi-7MW" firstAttribute="leading" secondItem="9xQ-gB-g3z" secondAttribute="leadingMargin" constant="7" id="gwo-0D-5yi"/>
+                            <constraint firstItem="y7w-7H-m0e" firstAttribute="centerX" secondItem="9xQ-gB-g3z" secondAttribute="centerX" constant="-13" id="rFA-Ly-XC3"/>
+                            <constraint firstItem="knp-Nd-Yl3" firstAttribute="leading" secondItem="9xQ-gB-g3z" secondAttribute="leadingMargin" constant="71" id="sRV-uO-VJO"/>
+                            <constraint firstItem="knp-Nd-Yl3" firstAttribute="top" secondItem="y7w-7H-m0e" secondAttribute="bottom" constant="50" id="xfx-cP-bVs"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="dropDownIngredientes" destination="Fqs-Pt-H20" id="9FQ-0b-v2Q"/>
+                        <outlet property="listaIngredientes" destination="knp-Nd-Yl3" id="ZIa-3h-6wC"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1Rd-OF-9Qc" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5218.3999999999996" y="-563.56821589205401"/>
+        </scene>
+        <!--Vista Conffirmacion-->
+        <scene sceneID="f50-TF-Qd3">
+            <objects>
+                <viewController id="oDc-y7-Fhc" customClass="VistaConffirmacion" customModule="LushiniPizza" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Frj-TQ-6bY"/>
+                        <viewControllerLayoutGuide type="bottom" id="yG7-cv-pq6"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="cEe-49-p6a">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Confirma tu pedido" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hkp-KJ-ZEb">
+                                <rect key="frame" x="77" y="64" width="225" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Hkp-KJ-ZEb" firstAttribute="leading" secondItem="cEe-49-p6a" secondAttribute="leadingMargin" constant="61" id="09G-U7-6h6"/>
+                            <constraint firstItem="Hkp-KJ-ZEb" firstAttribute="centerX" secondItem="cEe-49-p6a" secondAttribute="centerX" constant="2" id="Ty4-mW-JuK"/>
+                            <constraint firstItem="Hkp-KJ-ZEb" firstAttribute="top" secondItem="Frj-TQ-6bY" secondAttribute="bottom" id="mGr-y5-0Ye"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="WK5-od-nYK" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5959.1999999999998" y="-564.46776611694156"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="ubq-3Y-4o9">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="O7l-D3-spy" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="odn-V2-uXX">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="gHA-s3-9Nx"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6Ei-Zl-eQe" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1416.8" y="-561.76911544227892"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="General" width="960" height="600"/>
+        <image name="Ingredientes" width="750" height="500"/>
+        <image name="Masas" width="286" height="191"/>
+        <image name="Quesos" width="152" height="136"/>
+        <image name="Sizes" width="124" height="134"/>
+    </resources>
 </document>
