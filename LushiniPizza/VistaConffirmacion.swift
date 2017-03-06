@@ -8,8 +8,36 @@
 
 import UIKit
 
-class VistaConffirmacion: UIViewController {
+class VistaConffirmacion: UIViewController, UITextFieldDelegate {
 
+    var tamanoSize:String = " "
+    var masa:String = " "
+    var queso:String = " "
+    var ingredienteUno:String = " "
+    var ingredienteDos:String = " "
+    var ingredienteTres:String = " "
+    var ingredienteCuatro:String = " "
+    
+    @IBOutlet weak var etiquetaSize: UILabel!
+    @IBOutlet weak var etiquetaMasa: UILabel!
+    @IBOutlet weak var etiquetaQueso: UILabel!
+    @IBOutlet weak var etiquetaIngredienteUno: UILabel!
+    @IBOutlet weak var etiquetaIngredienteDos: UILabel!
+    @IBOutlet weak var etiquetaIngredienteTres: UILabel!
+    @IBOutlet weak var etiquetaIngredienteCuatro: UILabel!
+    @IBOutlet weak var confirmarPedido: UIButton!
+    
+    override func viewWillAppear(_ animated: Bool) {
+        etiquetaSize.text=String(tamanoSize)
+        etiquetaMasa.text=String(masa)
+        etiquetaQueso.text=String(queso)
+        etiquetaIngredienteUno.text=String(ingredienteUno)
+        etiquetaIngredienteDos.text=String(ingredienteDos)
+        etiquetaIngredienteTres.text=String(ingredienteTres)
+        etiquetaIngredienteCuatro.text=String(ingredienteCuatro)
+
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 

@@ -8,10 +8,11 @@
 
 import UIKit
 
-class VistaQuesos: UIViewController {
+class VistaQuesos: UIViewController, UITextFieldDelegate {
 
     @IBOutlet weak var textoQuesos: UITextField!
     @IBOutlet weak var dropDownQuesos: UIPickerView!
+    @IBOutlet weak var seguirQuesos: UIButton!
     
     var listaQuesos = ["Mozzarella","Chedar","Parmesano","Sin Queso"]
 

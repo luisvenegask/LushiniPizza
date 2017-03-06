@@ -8,10 +8,11 @@
 
 import UIKit
 
-class VistaMasa: UIViewController {
+class VistaMasa: UIViewController, UITextFieldDelegate {
 
     @IBOutlet weak var textoMasas: UITextField!
     @IBOutlet weak var dropDownMasas: UIPickerView!
+    @IBOutlet weak var seguirMasas: UIButton!
     
     var listaMasas = ["Delgada","Crujiente","Gruesa"]
 
