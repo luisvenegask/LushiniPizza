@@ -8,7 +8,7 @@
 
 import UIKit
 
-class VistaSizes: UIViewController, UITextFieldDelegate {
+class VistaSizes: UIViewController {
 
     @IBOutlet weak var textoSize: UITextField!
     @IBOutlet weak var dropDownSize: UIPickerView!
@@ -18,16 +18,16 @@ class VistaSizes: UIViewController, UITextFieldDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        textoSize.delegate=self
         // Do any additional setup after loading the view.
     }
 
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        let ingresoTextoSize=textoSize
-        let vistaSizeConfirmacion=segue.destination as! VistaConffirmacion
-        vistaSizeConfirmacion.tamanoSize=ingresoTextoSize
+        let textoSize = sender as! UIButton
+        let resultado:String = textoSize.titleLabel!.text!
+        print(resultado)
+        let sigVista = segue.destination as! VistaConffirmacion
+        sigVista.tamanoSize = resultado
     }
-    
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()

@@ -25,6 +25,33 @@ class VistaIngredientes: UIViewController, UITextFieldDelegate {
         // Do any additional setup after loading the view.
     }
 
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let textoIngredienteUno = sender as! UIButton
+        let resultadoUno:String = textoIngredienteUno.titleLabel!.text!
+        print(resultadoUno)
+        let sigVistaUno = segue.destination as! VistaConffirmacion
+        sigVistaUno.ingredienteUno = resultadoUno
+    
+        let textoIngredienteDos = sender as! UIButton
+        let resultadoDos:String = textoIngredienteDos.titleLabel!.text!
+        print(resultadoDos)
+        let sigVistaDos = segue.destination as! VistaConffirmacion
+        sigVistaDos.ingredienteDos = resultadoDos
+    
+        let textoIngredienteTres = sender as! UIButton
+        let resultadoTres:String = textoIngredienteTres.titleLabel!.text!
+        print(resultadoTres)
+        let sigVistaTres = segue.destination as! VistaConffirmacion
+        sigVistaTres.ingredienteTres = resultadoTres
+    
+        let textoIngredienteCuatro = sender as! UIButton
+        let resultadoCuatro:String = textoIngredienteCuatro.titleLabel!.text!
+        print(resultadoCuatro)
+        let sigVistaCuatro = segue.destination as! VistaConffirmacion
+        sigVistaCuatro.ingredienteCuatro = resultadoCuatro
+    }
+
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.

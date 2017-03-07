@@ -22,6 +22,14 @@ class VistaQuesos: UIViewController, UITextFieldDelegate {
         // Do any additional setup after loading the view.
     }
 
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let textoQuesos = sender as! UIButton
+        let resultado:String = textoQuesos.titleLabel!.text!
+        print(resultado)
+        let sigVista = segue.destination as! VistaConffirmacion
+        sigVista.queso = resultado
+    }
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.

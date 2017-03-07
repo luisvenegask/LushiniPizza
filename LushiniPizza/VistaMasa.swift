@@ -27,6 +27,15 @@ class VistaMasa: UIViewController, UITextFieldDelegate {
         // Dispose of any resources that can be recreated.
     }
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let textoMasas = sender as! UIButton
+        let resultado:String = textoMasas.titleLabel!.text!
+        print(resultado)
+        let sigVista = segue.destination as! VistaConffirmacion
+        sigVista.masa = resultado
+    }
+
+    
 
     /*
     // MARK: - Navigation
